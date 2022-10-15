@@ -1,0 +1,24 @@
+[init]
+  defaultBranch = main
+[alias]
+  bi = bisect
+  bl = blame --pretty=format:"%h"
+  br = branch
+  co = checkout
+  ci = commit -m
+  df = diff --word-diff
+  st = status -sb
+  try = commit --amend
+  sos = reset --hard @{u}
+  chs = "!git checkout $1 && git status"
+  unstage = reset HEAD
+  rollback = reset --soft HEAD~
+  undo = "!git reset --soft HEAD~ && git reset HEAD"
+[color]
+  ui = auto
+  diff = auto
+  status = auto
+  branch = auto
+[column]
+  ui = always
+
