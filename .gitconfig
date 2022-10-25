@@ -13,6 +13,7 @@
   chs = "!git checkout $1 && git status"
   unstage = reset HEAD
   rollback = reset --soft HEAD~
+  url = git remote -v
   undo = "!git reset --soft HEAD~ && git reset HEAD"
 [color]
   ui = auto
@@ -21,4 +22,3 @@
   branch = auto
 [column]
   ui = always
-
